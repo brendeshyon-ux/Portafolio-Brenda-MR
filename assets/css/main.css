@@ -165,6 +165,7 @@ textarea {
 	html,
 	body {
 		min-width: 320px;
+
 	}
 
 }
@@ -232,7 +233,7 @@ select,
 textarea {
 	color: #540863;
 	font-family: "Source Sans Pro", sans-serif;
-	font-weight: 300;
+	font-weight: 530;
 	font-size: 1rem;
 	line-height: 1.65;
 }
@@ -341,7 +342,7 @@ h6 {
 	}
 
 	h2 {
-		font-size: 1.25em;
+		font-size: 1rem;
 		line-height: 1.5;
 	}
 
