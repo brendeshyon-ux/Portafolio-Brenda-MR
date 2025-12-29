@@ -1,0 +1,111 @@
+.about-hero {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    margin-bottom: 2rem;
+    background: rgba(84, 8, 99, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+    border-left: 5px solid #540863;
+}
+
+.about-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #540863;
+}
+
+.about-bio p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+/* Etiquetas de Soft Skills */
+.soft-skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 3rem;
+}
+
+.soft-skill-tag {
+    background: #540863;
+    color: white;
+    padding: 6px 15px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Subtítulos de sección */
+.section-subtitle {
+    border-bottom: 1px solid rgba(84, 8, 99, 0.3);
+    padding-bottom: 10px;
+    margin-bottom: 1.5rem;
+    color: #540863;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+/* Tarjetas de Experiencia */
+.past-experience {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.past-item {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.past-item:hover {
+    background: rgba(84, 8, 99, 0.15);
+}
+
+.past-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.past-year {
+    font-size: 0.7rem;
+    color: #a81eed;
+}
+
+.past-item h5 {
+    font-size: 0.85rem;
+    color: #540863;
+    margin: 5px 0 10px 0;
+}
+
+/* Certificaciones */
+.certs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.cert-card {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(255, 255, 255, 0.03);
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 0.8rem;
+}
+
+.cert-card i { color: #540863; font-size: 1.2rem; }
+
+/* Móvil */
+@media screen and (max-width: 736px) {
+    .about-hero { flex-direction: column; text-align: center; }
+    .past-experience { grid-template-columns: 1fr; }
+}
