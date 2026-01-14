@@ -19,15 +19,17 @@
 
 .about-bio p {
     margin-bottom: 1rem;
-    line-height: 1.6;
+    line-height: 1.5;
+    font-size: 1rem;
 }
 
 /* Etiquetas de Soft Skills */
 .soft-skills-container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 10px;
-    margin-bottom: 3rem;
+    margin-bottom: 2.5rem;
 }
 
 .soft-skill-tag {
@@ -35,7 +37,7 @@
     color: white;
     padding: 6px 15px;
     border-radius: 20px;
-    font-size: 0.75rem;
+    font-size: 0.88rem;
     font-weight: bold;
     letter-spacing: 1px;
 }
@@ -43,10 +45,10 @@
 /* Subtítulos de sección */
 .section-subtitle {
     border-bottom: 1px solid rgba(84, 8, 99, 0.3);
-    padding-bottom: 10px;
-    margin-bottom: 1.5rem;
+    padding-bottom: 5px;
+    margin-bottom: 1rem;
     color: #540863;
-    font-size: 1rem;
+    font-size: 1.5rem;
     text-transform: uppercase;
 }
 
@@ -59,7 +61,7 @@
 
 .past-item {
     background: rgba(255, 255, 255, 0.05);
-    padding: 20px;
+    padding: 10px;
     border-radius: 10px;
     transition: 0.3s;
 }
@@ -75,14 +77,19 @@
 }
 
 .past-year {
-    font-size: 0.7rem;
+    font-size: 1rem;
     color: #a81eed;
 }
 
 .past-item h5 {
-    font-size: 0.85rem;
+    font-size: 1.13rem;
     color: #540863;
-    margin: 5px 0 10px 0;
+    margin: 10px 0 20px 0;
+}
+
+.past-item p {
+    font-size: 0.9rem;
+    text-align: justify;
 }
 
 /* Certificaciones */
@@ -99,13 +106,41 @@
     background: rgba(255, 255, 255, 0.03);
     padding: 15px;
     border-radius: 8px;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
 }
 
-.cert-card i { color: #540863; font-size: 1.2rem; }
+.cert-card i {
+    color: #540863;
+    font-size: 1.2rem;
+}
 
 /* Móvil */
 @media screen and (max-width: 736px) {
-    .about-hero { flex-direction: column; text-align: center; }
-    .past-experience { grid-template-columns: 1fr; }
+    .about-hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .past-experience {
+        grid-template-columns: 1fr;
+    }
+
+    .soft-skills-container {
+        justify-content: center;
+    }
+
+    .about-bio p {
+        font-size: 1.15rem;
+    }
+
+    .past-item h5 {
+        font-size: 1.5rem;
+        text-align: justify;
+    }
+
+    .past-item p {
+        font-size: 1.1rem;
+        text-align: justify;
+    }
+
 }
