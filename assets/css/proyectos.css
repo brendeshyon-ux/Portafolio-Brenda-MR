@@ -1,8 +1,117 @@
+
+/* Metro CDMX: Movilidad Inteligente */
+
+.modal-overlay {
+    display: none; 
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(5px);
+    overflow-y: auto;
+}
+
+.modal-content {
+    background-color: #ffcdd2cc;
+    margin: 5% auto;
+    padding: 40px;
+    width: 80%;
+    max-width: 900px;
+    border-radius: 15px;
+    position: relative;
+    color: #540863;
+    display: block;
+}
+
+.modal-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: transparent;
+    border: none;
+    border-radius: 50%;
+
+    font-size: 24px;
+    line-height: 1;
+    color: #540863 ; 
+
+    cursor: pointer;
+    z-index: 10;
+
+    transition: background-color 0.25s ease, transform 0.2s ease;
+}
+
+/* Hover: círculo morado translúcido */
+.modal-close:hover {
+    background-color: rgba(123, 31, 162, 0.2); /* moradito transparente */
+    transform: scale(1.05);
+}
+
+/* Opcional: efecto al hacer click */
+.modal-close:active {
+    transform: scale(0.95);
+}
+
+/* Quita outline feo en click */
+.modal-close:focus {
+    outline: none;
+}
+
+
+.process-step {
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+}
+
+.process-step img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 15px;
+    display: block;
+    /* Protección visual extra */
+    user-select: none;
+    pointer-events: none;
+}
+
+/* Marca de agua */
+
+.watermark-img-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.watermark-img-container::after {
+    content: "Brendeshyon UX - CONFIDENCIAL";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-30deg);
+    font-size: 2rem;
+    color: rgba(255, 255, 255, 0.15); /* Muy sutil */
+    pointer-events: none; /* Para que puedan ver la imagen abajo */
+    white-space: nowrap;
+    width: 100%;
+    text-align: center;
+}
+
+/* Tarjetas */
+
 #work .projects-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
     gap: 3rem;
-    /* Aumenta el espacio entre las tarjetas */
     padding: 2rem 0;
 }
 
@@ -247,40 +356,31 @@
 
 /* Colores específicos para cada tarjeta */
 
-/* Convertidor de Temperatura */
-#work .project-card.temp-converter .project-image-container {
-    background-color: #FFCDC9;
+/* Convertidor de Metro CDMX: Movilidad Inteligente */
+#work .project-card.metro-app .project-image-container {
+    background-color: #ff5722;
 }
 
-#work .project-card.temp-converter .project-badge {
-    background-color: #FD7979;
+#work .project-card.metro-app .project-badge {
+    background-color: #D92200;
 }
 
-#work .project-card.temp-converter .project-link {
-    color: #FD7979;
-}
-
-#work .project-card.temp-converter .project-tags span {
-    background-color: #FD7979;
+#work .project-card.metro-app .project-tags span {
+    background-color: #D92200;
     color: white;
 }
 
-
-/* Calculadora Factorial */
-#work .project-card.factorial-calc .project-image-container {
-    background-color: #4A0E4E;
+#work .project-card.metro-app .project-link {
+    background-color: #5A0006;
+    color: white !important;   
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    display: inline-block;
+    text-decoration: none;
 }
-
-#work .project-card.factorial-calc .project-badge {
-    background-color: #8C1C8F;
-}
-
-#work .project-card.factorial-calc .project-link {
-    color: #8C1C8F;
-}
-
-#work .project-card.factorial-calc .project-tags span {
-    background-color: #8C1C8F;
+#work .project-card.metro-app .project-link:hover {
+    background-color: #bf370fcc;
     color: white;
 }
 

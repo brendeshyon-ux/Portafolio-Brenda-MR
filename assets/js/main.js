@@ -301,6 +301,7 @@
 
 	// Events.
 	$body.on('click', function (event) {
+		if (isProjectModalOpen) return;
 
 		// Article visible? Hide.
 		if ($body.hasClass('is-article-visible'))
@@ -313,6 +314,7 @@
 		switch (event.keyCode) {
 
 			case 27:
+				 if (isProjectModalOpen) return;
 
 				// Article visible? Hide.
 				if ($body.hasClass('is-article-visible'))

@@ -41,23 +41,19 @@
 }
 
 .design {
-    background-color: #482286;
+    background-color: #520c61;
 }
 
 .frontend {
-    background-color: #5b2aa9;
+    background-color: #6d1371;
 }
 
 .backend {
-    background-color: #6931c4;
+    background-color: #7c1779;
 }
 
 .tools {
-    background-color: #7838df;
-}
-
-.management {
-    background-color: #8b47f9;
+    background-color: #8c1e80;
 }
 
 /* Tarjeta de Experiencia */
