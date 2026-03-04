@@ -1,110 +1,78 @@
-
 /* Metro CDMX: Movilidad Inteligente */
 
-.modal-overlay {
-    display: none; 
-    position: fixed;
-    z-index: 9999;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    backdrop-filter: blur(5px);
-    overflow-y: auto;
+#work .mimetro-description {
+    font-size: 0.82rem;
+    color: #5A0006;
+    font-weight: 400;
 }
 
-.modal-content {
-    background-color: #ffcdd2cc;
-    margin: 5% auto;
-    padding: 40px;
-    width: 80%;
-    max-width: 900px;
-    border-radius: 15px;
-    position: relative;
-    color: #540863;
-    display: block;
+.mimetro-titulo {
+    font-size: 1.5rem;
+    color: #5A0006;
+    font-weight: 600;
 }
 
-.modal-close {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
+.mimetro-steps {
+    font-size: 0.82rem;
+    padding-left: 15px;
+    color: #5A0006;
+    font-weight: 400;
+}
 
-    width: 40px;
-    height: 40px;
+.mimetro-steps li {
+    margin-bottom: 8px;
+}
 
+.mimetro-steps strong {
+    color: #5A0006;
+    font-weight: 700;
+}
+
+
+/* Contenedor para los dos botones */
+.project-actions {
     display: flex;
-    align-items: center;
-    justify-content: center;
-
-    background: transparent;
-    border: none;
-    border-radius: 50%;
-
-    font-size: 24px;
-    line-height: 1;
-    color: #540863 ; 
-
-    cursor: pointer;
-    z-index: 10;
-
-    transition: background-color 0.25s ease, transform 0.2s ease;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 1rem;
 }
 
-/* Hover: círculo morado translúcido */
-.modal-close:hover {
-    background-color: rgba(123, 31, 162, 0.2); /* moradito transparente */
-    transform: scale(1.05);
-}
-
-/* Opcional: efecto al hacer click */
-.modal-close:active {
-    transform: scale(0.95);
-}
-
-/* Quita outline feo en click */
-.modal-close:focus {
-    outline: none;
-}
-
-
-.process-step {
-    margin-bottom: 40px;
-    padding-bottom: 20px;
-}
-
-.process-step img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-top: 15px;
+/* Estilo base de los botones */
+.btn-project {
     display: block;
-    /* Protección visual extra */
-    user-select: none;
-    pointer-events: none;
-}
-
-/* Marca de agua */
-
-.watermark-img-container {
-    position: relative;
-    display: inline-block;
     width: 100%;
-}
-
-.watermark-img-container::after {
-    content: "Brendeshyon UX - CONFIDENCIAL";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) rotate(-30deg);
-    font-size: 2rem;
-    color: rgba(255, 255, 255, 0.15); /* Muy sutil */
-    pointer-events: none; /* Para que puedan ver la imagen abajo */
-    white-space: nowrap;
-    width: 100%;
+    padding: 10px;
     text-align: center;
+    text-decoration: none;
+    font-weight: 600px;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    font-size: 0.95rem;
 }
+
+/* Botón principal (Behance) */
+.btn-behance {
+    background-color: #FF7524;
+    color: white !important;
+}
+
+.btn-behance:hover {
+    background-color: #E56A20;
+}
+
+/* Botón secundario (Prototipo) */
+.btn-figma {
+    background-color: transparent;
+    color: #5A0006 !important;
+    border: 2px solid #5A0006;
+}
+
+.btn-figma:hover {
+    background-color: transparent;
+    color: #E56A20!important;
+    border: 2px solid #E56A20;
+}
+
 
 /* Tarjetas */
 
@@ -158,7 +126,6 @@
     padding: 8px 15px;
     border-radius: 10px;
     font-size: 0.85rem;
-    font-weight: bold;
     z-index: 1;
 }
 
@@ -190,17 +157,14 @@
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
-    margin-top: 1rem;
-    margin-bottom: 1.2rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
 #work .project-tags span {
-    background-color: #e9ecef;
-    color: #495057;
     padding: 6px 12px;
     border-radius: 8px;
     font-size: 0.8rem;
-    font-weight: 500;
 }
 
 /* SECCIÓN DE DISEÑOS 3D */
@@ -223,7 +187,8 @@
 }
 
 .clo3d-item {
-    min-width: 100%; /* Un elemento a la vez en móvil/tablet */
+    min-width: 100%;
+    /* Un elemento a la vez en móvil/tablet */
     position: relative;
     text-align: center;
     padding: 10px;
@@ -232,9 +197,10 @@
 .clo3d-item img {
     width: 100%;
     height: 350px;
-    object-fit: contain; /* Para que no se corte el diseño 3D */
+    object-fit: contain;
+    /* Para que no se corte el diseño 3D */
     border-radius: 15px;
-    background: rgba(0,0,0,0.2);
+    background: rgba(0, 0, 0, 0.2);
 }
 
 .img-caption {
@@ -261,14 +227,20 @@
     background: rgba(255, 255, 255, 0.4);
 }
 
-.prev { left: 20px; }
-.next { right: 20px; }
+.prev {
+    left: 20px;
+}
+
+.next {
+    right: 20px;
+}
 
 /* Responsivo */
 @media (max-width: 736px) {
     .clo3d-item img {
         height: 300px;
     }
+
     .carousel-btn {
         padding: 0px 4px 0px 4px;
     }
@@ -362,23 +334,24 @@
 }
 
 #work .project-card.metro-app .project-badge {
-    background-color: #D92200;
+    background-color: #E56A20;
 }
 
 #work .project-card.metro-app .project-tags span {
-    background-color: #D92200;
+    background-color: #E56A20;
     color: white;
 }
 
 #work .project-card.metro-app .project-link {
     background-color: #5A0006;
-    color: white !important;   
+    color: white !important;
     border-radius: 8px;
     cursor: pointer;
     transition: background 0.3s ease;
     display: inline-block;
     text-decoration: none;
 }
+
 #work .project-card.metro-app .project-link:hover {
     background-color: #bf370fcc;
     color: white;
