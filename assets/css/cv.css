@@ -13,22 +13,23 @@
 
 /* Rejilla de habilidades */
 .skills-grid {
-    display: grid;
-    grid-auto-columns: minmax(80px, 1fr);
-    grid-auto-flow: column;
+    display: flex;
+    flex-wrap: nowrap;
     gap: 1px;
     margin-bottom: 1rem;
 }
 
 /* Estilo de las cajas (Box) */
 .skill-box {
+    flex: 1;
+    min-width: 0;
     padding: 5px;
     text-align: center;
-    font-weight: bold;
+    font-weight: 600;
     color: #ffffff;
     border-radius: 4px;
     transition: transform 0.3s ease;
-    font-size: 0.85rem;
+    font-size: 0.82rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -230,24 +231,26 @@
 
 @media screen and (max-width: 480px) {
     .skills-title {
-        font-size: 0.75rem !important;
-        /* Título más pequeño */
+        font-size: 0.85rem !important;
         margin: 1rem 0 0.8rem 0 !important;
+        font-weight: 600 !important;
+
     }
 
     .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
         gap: 1px;
-        /* Menos espacio entre cajas */
+        flex-wrap: wrap;
     }
 
     .skill-box {
-        min-height: 40px;
-        font-size: 0.70rem;
+        font-size: 0.85rem;
+        font-weight: 600 !important;
     }
 
     .experience-card {
         flex-direction: column;
-        /* Se apila en vertical en celulares */
     }
 
     .exp-image {
