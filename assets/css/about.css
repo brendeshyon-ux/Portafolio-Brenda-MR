@@ -17,10 +17,11 @@
     border: 3px solid #540863;
 }
 
-.about-bio p {
-    margin-bottom: 1rem;
-    line-height: 1.5;
-    font-size: 1rem;
+.texto-biografia p {
+    font-size: 0.90rem;
+    color: #540863;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
 }
 
 /* Etiquetas de Soft Skills */
@@ -38,7 +39,7 @@
     padding: 6px 15px;
     border-radius: 20px;
     font-size: 0.88rem;
-    font-weight: bold;
+    font-weight: 600;
     letter-spacing: 1px;
 }
 
@@ -79,17 +80,19 @@
 .past-year {
     font-size: 1rem;
     color: #a81eed;
+    font-weight: 600;
 }
 
 .past-item h5 {
-    font-size: 1.13rem;
+    font-size: 1rem;
     color: #540863;
     margin: 10px 0 20px 0;
+    font-weight: 800;
 }
 
 .past-item p {
     font-size: 0.9rem;
-    text-align: justify;
+    font-weight: 400;
 }
 
 /* Certificaciones */

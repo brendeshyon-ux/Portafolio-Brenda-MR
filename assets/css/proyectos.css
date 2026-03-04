@@ -1,4 +1,4 @@
-/* Metro CDMX: Movilidad Inteligente */
+/* TEXTO - MiMetro*/
 
 #work .mimetro-description {
     font-size: 0.82rem;
@@ -26,6 +26,33 @@
 .mimetro-steps strong {
     color: #5A0006;
     font-weight: 700;
+}
+
+/* TEXTO - CUPCAKES*/
+
+#work .cupcakes-description {
+    font-size: 0.9rem;
+    color: #660044;
+    font-weight: 400;
+}
+
+.cupcakes-titulo {
+    font-size: 1.5rem;
+    color: #660044;
+    font-weight: 600;
+}
+
+/* TEXTO - DEPORTES*/
+
+.deportes-description {
+    font-size: 0.9rem;
+    color: #002e5d;
+    font-weight: 400;
+}
+.deportes-titulo {
+    font-size: 1.3rem;
+    color: #002e5d;
+    font-weight: 600;
 }
 
 
@@ -57,7 +84,7 @@
 }
 
 .btn-behance:hover {
-    background-color: #E56A20;
+    background-color: #CC5E1D;
 }
 
 /* Botón secundario (Prototipo) */
@@ -68,9 +95,8 @@
 }
 
 .btn-figma:hover {
-    background-color: transparent;
-    color: #E56A20!important;
-    border: 2px solid #E56A20;
+    background-color: #5A0006;
+    color: white !important;
 }
 
 
@@ -166,6 +192,7 @@
     border-radius: 8px;
     font-size: 0.8rem;
 }
+
 
 /* SECCIÓN DE DISEÑOS 3D */
 
@@ -329,6 +356,7 @@
 /* Colores específicos para cada tarjeta */
 
 /* Convertidor de Metro CDMX: Movilidad Inteligente */
+
 #work .project-card.metro-app .project-image-container {
     background-color: #ff5722;
 }
@@ -342,56 +370,66 @@
     color: white;
 }
 
-#work .project-card.metro-app .project-link {
-    background-color: #5A0006;
-    color: white !important;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background 0.3s ease;
-    display: inline-block;
-    text-decoration: none;
-}
-
-#work .project-card.metro-app .project-link:hover {
-    background-color: #bf370fcc;
-    color: white;
-}
-
 
 /* Página de Cupcakes */
+
 #work .project-card.cupcakes-page .project-image-container {
-    background-color: #F8E0E4;
+    background-color: #950070;
 }
 
 #work .project-card.cupcakes-page .project-badge {
-    background-color: #AF3E3E;
-}
-
-#work .project-card.cupcakes-page .project-link {
-    color: #AF3E3E;
+    background-color: #950070;
 }
 
 #work .project-card.cupcakes-page .project-tags span {
-    background-color: #AF3E3E;
+    background-color: #950070;
     color: white;
+}
+
+.exp-link-cupcakes {
+    align-self: flex-start;
+    padding: 8px 16px;
+    border: 1px solid #950070;
+    border-radius: 6px;
+    color: #950070 !important;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600px;
+    transition: 0.3s;
+    margin-top: 20px;
+}
+
+.exp-link-cupcakes:hover {
+    background-color: #950070;
+    color: white !important;
 }
 
 
 /* Página de Productos Deportivos */
-#work .project-card.sports-page .project-image-container {
-    background-color: #212529;
-}
 
 #work .project-card.sports-page .project-badge {
-    background-color: #08b5bbd1;
-    /* Un turquesa */
-}
-
-#work .project-card.sports-page .project-link {
-    color: #08b5bb;
+    background-color: #002e5d;
 }
 
 #work .project-card.sports-page .project-tags span {
-    background-color: #08b5bbd1;
+    background-color: #002e5d;
     color: white;
+}
+
+.exp-link-deportes{
+    align-self: flex-start;
+    padding: 8px 16px;
+    border: 1px solid #002e5d;
+    border-radius: 6px;
+    color: #002e5d !important;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600px;
+    transition: 0.3s;
+    margin-top: 20px;
+}
+
+.exp-link-deportes:hover {
+    background-color: #002e5d;
+    color: white !important;
 }
