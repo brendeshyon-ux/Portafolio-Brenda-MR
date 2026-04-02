@@ -98,7 +98,7 @@
 /* Certificaciones */
 .certs-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 15px;
 }
 
@@ -113,7 +113,7 @@
 }
 
 .cert-card i {
-    color: #540863;
+    color: #540863; 
     font-size: 1.2rem;
 }
 
