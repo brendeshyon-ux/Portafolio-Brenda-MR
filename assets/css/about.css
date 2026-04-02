@@ -123,6 +123,10 @@
         flex-direction: column;
         text-align: center;
     }
+    
+    .certs-grid {
+    grid-template-columns: 1fr;
+    }
 
     .past-experience {
         grid-template-columns: 1fr;
