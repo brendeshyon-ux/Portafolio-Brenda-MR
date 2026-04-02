@@ -61,7 +61,7 @@
 
 .experience-card {
     display: flex;
-    background: rgba(167, 235, 242, 0.5);
+    background: #0A182E;
     border-radius: 12px;
     overflow: hidden;
     margin-top: 1.5rem;
@@ -69,11 +69,10 @@
 }
 
 .experience-card:hover {
-    background: rgba(167, 235, 242, 0.8);
+    background: #050b15;
     transform: translateY(-3px);
 }
 
-/* imagen */
 .exp-image {
     flex: 0 0 40%;
     position: relative;
@@ -91,7 +90,8 @@
     position: absolute;
     top: 10px;
     left: 10px;
-    background: #a7ebf2;
+    background: #0A182E;
+    color: white;
     padding: 4px 12px;
     border-radius: 20px;
     font-size: 0.7rem;
@@ -100,7 +100,7 @@
 
 /* Información del trabajo */
 .exp-info {
-    color: #023859;
+    color: white;
     padding: 1.5rem;
     flex: 1;
     display: flex;
@@ -111,19 +111,20 @@
     display: flex;
     justify-content: space-between;
     font-size: 0.75rem;
-    color: #023859;
+    color: white;
     margin-bottom: 0.5rem;
 }
 
 .exp-role {
     font-size: 1.2rem !important;
     margin: 0 0 1rem 0 !important;
-    color: #011c40;
+    color: #F2E394;
     letter-spacing: 0px;
 }
 
 .exp-description {
     font-size: 0.85rem;
+    font-weight: 400;
     line-height: 1.6;
     margin-bottom: 1rem;
 }
@@ -136,18 +137,18 @@
 
 .exp-tags span {
     font-size: 0.8rem;
-    background: rgba(2, 56, 89, 0.7);
+    background: #F2E394;
     padding: 2px 8px;
     border-radius: 4px;
-    color: white;
+    color: #0A182E;
 }
 
 .exp-link {
     align-self: flex-start;
     padding: 8px 16px;
-    border: 1px solid #023859;
+    border: 1px solid #F2E394;
     border-radius: 6px;
-    color: #023859 !important;
+    color: #F2E394 !important;
     text-decoration: none;
     font-size: 0.8rem;
     font-weight: bold;
@@ -155,8 +156,8 @@
 }
 
 .exp-link:hover {
-    background: #023859;
-    color: #fff !important;
+    background: #F2E394;
+    color: #0A182E !important;
 }
 
 /* Contenedor de la línea de tiempo */
