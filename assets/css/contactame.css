@@ -8,7 +8,7 @@
 /* Formulario */
 .contact-form {
     width: 100%;
-    max-width: 500px;
+    max-width: 600px;
     margin-bottom: 0;
 }
 
@@ -32,15 +32,23 @@
     outline: none;
     border-color: #540863;
     background: rgba(255, 255, 255, 0.5);
+    color: #540863;
+}
+
+.contact-form input::placeholder, 
+.contact-form textarea::placeholder {
+    color: #540863;
+    opacity: 0.5;
+    font-size: 0.9rem;
 }
 
 .btn-submit {
     width: 100%;
-    padding: 30px;
+    padding: 25px;
     background-color: #540863;
     color: white;
     border: none;
-    border-radius: 35px;
+    border-radius: 20px;
     font-weight: bold;
     cursor: pointer;
     transition: all 0.3s ease;
