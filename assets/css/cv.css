@@ -62,7 +62,7 @@
 
 /* Tarjeta de Experiencia */
 
-.experience-card {
+.experience-card-cv {
     display: flex;
     background: #0A182E;
     border-radius: 12px;
@@ -71,7 +71,7 @@
     transition: all 0.3s ease;
 }
 
-.experience-card:hover {
+.experience-card-cv:hover {
     background: #050b15;
     transform: translateY(-3px);
 }
@@ -253,7 +253,7 @@
         font-weight: 600 !important;
     }
 
-    .experience-card {
+    .experience-card-cv {
         flex-direction: column;
     }
 
