@@ -407,3 +407,9 @@ function moveCarousel(direction) {
 	const offset = -currentSlide * 100;
 	document.querySelector('.clo3d-carousel').style.transform = `translateX(${offset}%)`;
 }
+
+document.querySelectorAll('.experience-card').forEach(card => {
+    card.addEventListener('click', function() {
+        this.classList.toggle('flipped');
+    });
+});
