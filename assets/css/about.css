@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 #about {
     position: relative;
     overflow: hidden;
@@ -7,7 +12,7 @@
 .colibri-container {
     position: absolute;
     width: 200px;
-    height: 200px;
+    height: 150px;
     z-index: 100;
     pointer-events: none;
     animation: vueloCruzar 15s ease-in-out infinite;
@@ -21,7 +26,7 @@ dotlottie-wc {
 
 @keyframes vueloCruzar {
     0% {
-        left: -150px;
+        left: -9.375rem;
         top: 30%;
         transform: rotate(-15deg) scale(0.8);
     }
@@ -41,8 +46,8 @@ dotlottie-wc {
 
 .about-circle-layout {
     position: relative;
-    width: 500px;
-    height: 500px;
+    width: 31.25rem;
+    height: 31.25rem;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -55,8 +60,8 @@ dotlottie-wc {
 }
 
 .about-image img {
-    width: 210px;
-    height: 300px;
+    width: 13rem;
+    height: 20rem;
     object-fit: cover;
 }
 
@@ -75,8 +80,8 @@ dotlottie-wc {
     position: absolute;
     background: #540863;
     color: white;
-    padding: 7px 16px;
-    border-radius: 25px;
+    padding: 0.438rem 1rem;
+    border-radius: 1.563rem;
     font-size: 0.75rem;
     font-weight: 600;
     white-space: nowrap;
@@ -85,35 +90,35 @@ dotlottie-wc {
 }
 
 .item-1 {
-    transform: rotate(0deg) translateX(210px) rotate(0deg);
+    transform: rotate(0deg) translateX(13.125rem) rotate(0deg);
 }
 
 .item-2 {
-    transform: rotate(45deg) translateX(210px) rotate(-45deg);
+    transform: rotate(45deg) translateX(13.125rem) rotate(-45deg);
 }
 
 .item-3 {
-    transform: rotate(90deg) translateX(210px) rotate(-90deg);
+    transform: rotate(90deg) translateX(13.125rem) rotate(-90deg);
 }
 
 .item-4 {
-    transform: rotate(135deg) translateX(210px) rotate(-135deg);
+    transform: rotate(135deg) translateX(13.125rem) rotate(-135deg);
 }
 
 .item-5 {
-    transform: rotate(180deg) translateX(210px) rotate(-180deg);
+    transform: rotate(180deg) translateX(13.125rem) rotate(-180deg);
 }
 
 .item-6 {
-    transform: rotate(225deg) translateX(210px) rotate(-225deg);
+    transform: rotate(225deg) translateX(13.125rem) rotate(-225deg);
 }
 
 .item-7 {
-    transform: rotate(270deg) translateX(210px) rotate(-270deg);
+    transform: rotate(270deg) translateX(13.125rem) rotate(-270deg);
 }
 
 .item-8 {
-    transform: rotate(315deg) translateX(210px) rotate(-315deg);
+    transform: rotate(315deg) translateX(13.125rem) rotate(-315deg);
 }
 
 @keyframes skillRespiracion {
@@ -151,7 +156,7 @@ dotlottie-wc {
 
 .texto-biografia-corta {
     text-align: center;
-    max-width: 650px;
+    max-width: 40.625rem;
     margin: 2rem auto;
     font-size: 1.1rem;
     line-height: 1.6;
@@ -175,14 +180,14 @@ dotlottie-wc {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 10px;
+    gap: 0.625rem;
     margin: 3rem 0;
-    perspective: 1000px;
-    max-width: 1000px;
+    perspective: 62.5rem;
+    max-width: 62.5rem;
 }
 
 .experience-card {
-    height: 420px;
+    height: 26.25rem;
     width: 100%;
     cursor: pointer;
 }
@@ -205,12 +210,12 @@ dotlottie-wc {
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
-    border-radius: 20px;
+    border-radius: 1.25rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 25px;
+    padding: 1.5625rem;
 }
 
 .card-back {
@@ -243,7 +248,7 @@ dotlottie-wc {
 
 .card-icon {
     font-size: 3rem;
-    margin-bottom: 15px;
+    margin-bottom: 0.938rem;
 }
 
 .card-front h4 {
@@ -269,7 +274,7 @@ dotlottie-wc {
 .certs-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+    gap: 1.25rem;
     margin-top: 2rem;
 }
 
@@ -277,11 +282,11 @@ dotlottie-wc {
     position: relative;
     background: rgba(255, 255, 255, 0.05);
     border: 1px solid rgba(84, 8, 99, 0.2);
-    border-radius: 15px;
-    padding: 25px;
+    border-radius: 1.25rem;
+    padding: 1.5625rem;
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 0.938rem;
     overflow: hidden;
     transition: all 0.4s ease;
     backdrop-filter: blur(5px);
@@ -317,7 +322,7 @@ dotlottie-wc {
     text-transform: uppercase;
     letter-spacing: 1px;
     color: #a81eed;
-    margin-top: 5px;
+    margin-top: 0.3125rem;
 }
 
 .shimmer {
@@ -361,15 +366,15 @@ dotlottie-wc {
     }
 
     .about-circle-layout {
-        width: 300px;
-        height: 300px;
+        width: 18.75rem;
+        height: 18.75rem;
         margin-bottom: 3rem !important;
     }
 
     .about-image img {
-        width: 180px;
+        width: 18.75rem;
         height: auto !important;
-        padding: 10px 0px 0px 0px !important;
+        padding: 0.625rem 0 0 0 !important;
     }
 
     .item-1,
@@ -380,7 +385,7 @@ dotlottie-wc {
     .item-6,
     .item-7,
     .item-8 {
-        translateX: 170px;
+        translateX: 10.625rem !important;
     }
 
     #about {
@@ -399,8 +404,8 @@ dotlottie-wc {
     }
 
     .about-image img {
-        width: 200px;
-        height: 280px;
+        width: 12.5rem;
+        height: 17.5rem;
     }
 
     .soft-skills-orbit {
@@ -411,8 +416,8 @@ dotlottie-wc {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 12px;
-        padding: 10px 0;
+        gap: 0.75rem;
+        padding: 0.625rem 0;
     }
 
     .soft-skill-tag {
@@ -422,22 +427,22 @@ dotlottie-wc {
         transform: none !important;
         animation: skillRespiracion 4s ease-in-out infinite;
         font-size: 0.85rem;
-        padding: 10px 20px;
+        padding: 0.625rem 1.25rem;
     }
 
     .texto-biografia-corta {
         font-size: 1rem;
-        padding: 0 10px;
-        margin-top: 1rem;
+        padding: 0 0.625rem;
+        margin-top: 0.625rem;
     }
 
     .past-experience-cards {
         grid-template-columns: 1fr;
-        gap: 10px;
+        gap: 1rem;
     }
 
     .experience-card {
-        height: 450px;
+        height: 35rem;
     }
 
     .section-subtitle {
@@ -447,7 +452,7 @@ dotlottie-wc {
     .cert-card {
         flex-direction: column;
         text-align: center;
-       padding: 20px;
+       padding: 2rem;
     }
 
     .cert-info {
@@ -455,6 +460,6 @@ dotlottie-wc {
     }
 
     .certs-grid {
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
     }
 }
