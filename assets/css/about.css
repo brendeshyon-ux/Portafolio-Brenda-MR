@@ -283,13 +283,20 @@ dotlottie-wc {
     background: rgba(255, 255, 255, 0.05);
     border: 1px solid rgba(84, 8, 99, 0.2);
     border-radius: 1.25rem;
-    padding: 1.5625rem;
+    padding: 1.6rem;
     display: flex;
     align-items: center;
     gap: 0.938rem;
     overflow: hidden;
     transition: all 0.4s ease;
     backdrop-filter: blur(5px);
+
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.cert-title, .cert-platform {
+    text-decoration: none;
 }
 
 .cert-card:hover {

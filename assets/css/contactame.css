@@ -8,7 +8,7 @@
 /* Formulario */
 .contact-form {
     width: 100%;
-    max-width: 600px;
+    max-width: 38rem;
     margin-bottom: 0;
 }
 
@@ -19,10 +19,10 @@
 .contact-form input,
 .contact-form textarea {
     width: 100%;
-    padding: 12px;
+    padding: 0.75rem;
     border: 1px solid rgba(84, 8, 99, 0.3);
     background: rgba(255, 255, 255, 0.2);
-    border-radius: 8px;
+    border-radius: 0.5rem;
     color: #540863;
     font-family: inherit;
 }
@@ -44,11 +44,11 @@
 
 .btn-submit {
     width: 100%;
-    padding: 25px;
+    padding: 1.563rem;
     background-color: #540863;
     color: white;
     border: none;
-    border-radius: 20px;
+    border-radius: 1.25rem;
     font-weight: bold;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -75,14 +75,14 @@
 
 .social-links h3 {
     font-size: 1.2rem;
-    letter-spacing: 2px;
+    letter-spacing: 0.125rem;
     text-align: center;
     margin-bottom: 0.8rem;
 }
 
 .icons-grid {
     display: flex;
-    gap: 35px;
+    gap: 2.188rem;
     justify-content: center;
 }
 
